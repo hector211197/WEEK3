@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity=""
+                tools:context=".background">
+
+    <ImageView android:id="@+id/img_view"
+               android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="115dp"
+               android:background="@drawable/cry"
+    />
+
+    <Button
+            android:id="@+id/btn_cry"
+            android:layout_below="@+id/img_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/cry"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:onClick="btnCry"
+    />
+
+    <Button
+            android:id="@+id/btn_feet"
+            android:layout_below="@+id/img_view"
+            android:layout_toRightOf="@+id/btn_cry"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/feet"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="btnFeet"
+    />
+
+    <Button
+            android:id="@+id/btn_glad"
+            android:layout_below="@+id/img_view"
+            android:layout_toRightOf="@+id/btn_feet"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/glad"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:onClick="btnGlad"
+    />
+
+    <Button
+            android:id="@+id/btn_heart"
+            android:layout_below="@+id/btn_cry"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/heart"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="btnHeart"
+    />
+
+    <Button
+            android:id="@+id/btn_myhouse"
+            android:layout_below="@+id/btn_feet"
+            android:layout_toRightOf="@+id/btn_heart"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/myhouse"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="btnMyhouse"
+    />
+
+    <Button
+            android:id="@+id/btn_apple"
+            android:layout_below="@+id/btn_glad"
+            android:layout_toRightOf="@+id/btn_myhouse"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/apple"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="btnApple"
+    />
+
+    <Button
+            android:id="@+id/btn_save"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/btn_apple"
+            android:text="SAVE"
+            android:textColor="#222222"
+            android:textSize="20dp"
+            android:layout_marginTop="25dp"
+            android:onClick="btnSave"
+    />
+
+</RelativeLayout>
